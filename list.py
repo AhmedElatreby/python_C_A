@@ -43,3 +43,51 @@ sams_score = class_name_test[2][1]
 print(sams_score)
 ellies_score = class_name_test[-1][-1]
 print(ellies_score)
+
+# Modifying 2D Lists
+incoming_class = [["Kenny", "American", 9], [
+    "Tanya", "Russian", 9], ["Madison", "Indian", 7]]
+print(incoming_class)
+incoming_class[2][2] = 8
+print(incoming_class)
+incoming_class[-3][-3] = "Ken"
+print(incoming_class)
+
+# INTRODUCTION TO LISTS
+first_names = ["Ainsley", "Ben", "Chani", "Depak"]
+preferred_size = ["Small", "Large", "Medium"]
+preferred_size.append("Medium")
+print(preferred_size)
+customer_data = [["Ainsley", "Small", True], ["Ben", "Large", False], [
+    "Chani", "Medium", True], ["Depak", "Medium", False]]
+print(customer_data)
+customer_data[2][2] = False
+print(customer_data)
+customer_data[1].remove(False)
+print(customer_data)
+customer_data_final = customer_data + \
+    [["Amit", "Large", True], ["Karim", "X-Large", False]]
+print(customer_data_final)
+
+# Usiung .(insert) to added into list
+front_display_list = ["Mango", "Filet Mignon", "Chocolate Milk"]
+print(front_display_list)
+front_display_list.insert(0, "Pineapple")
+print(front_display_list)
+
+# using .pop() to remove in the list
+data_science_topics = ["Machine Learning", "SQL",
+                       "Pandas", "Algorithms", "Statistics", "Python 3"]
+print(data_science_topics)
+
+data_science_topics.pop()
+print(data_science_topics)
+data_science_topics.pop(3)
+print(data_science_topics)
+
+# using rang() function
+number_list = range(9)
+print(list(number_list))
+
+zero_to_seven = range(8)
+print(list(zero_to_seven))
